@@ -233,13 +233,11 @@ def model_check(knowledge, query):
 
         # If model has an assignment for each symbol
         if not symbols:
-
             # If knowledge base is true in model, then query must also be true
             if knowledge.evaluate(model):
                 return query.evaluate(model)
             return True
         else:
-
             # Choose one of the remaining unused symbols
             remaining = symbols.copy()
             p = remaining.pop()
