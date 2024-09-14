@@ -1,3 +1,4 @@
 termcolor
 Pillow
 pomegranate
+python-constraint
