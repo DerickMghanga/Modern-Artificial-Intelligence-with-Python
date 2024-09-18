@@ -41,8 +41,7 @@ model.compile(
     loss="binary_crossentropy",
     metrics=["accuracy"]
 )
-
-model.fit(X_training, y_training, epochs=20)  # train the model 20 times
+model.fit(X_training, y_training, epochs=20)
 
 # Evaluate how well model performs
 model.evaluate(X_testing, y_testing, verbose=2)
