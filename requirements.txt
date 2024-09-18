@@ -3,3 +3,4 @@ Pillow
 pomegranate
 python-constraint
 tensorflow
+pygame
