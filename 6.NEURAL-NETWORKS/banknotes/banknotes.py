@@ -1,3 +1,7 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' 
+
 import csv
 import tensorflow as tf
 
@@ -37,7 +41,8 @@ model.compile(
     loss="binary_crossentropy",
     metrics=["accuracy"]
 )
-model.fit(X_training, y_training, epochs=20)
+
+model.fit(X_training, y_training, epochs=20)  # train the model 20 times
 
 # Evaluate how well model performs
 model.evaluate(X_testing, y_testing, verbose=2)
