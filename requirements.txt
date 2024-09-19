@@ -4,3 +4,4 @@ pomegranate
 python-constraint
 tensorflow
 pygame
+nltk
