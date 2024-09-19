@@ -5,3 +5,4 @@ python-constraint
 tensorflow
 pygame
 nltk
+markovify
